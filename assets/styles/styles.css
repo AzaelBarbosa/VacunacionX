@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 100%;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,12 +15,14 @@ html {
   max-width: 1200px;
   width: 90%;
 }
+
 header {
   background-color: rgba(255, 255, 255, 0.8);
   height: 100px;
   position: fixed;
   width: 100%;
 }
+
 .header {
   align-items: center;
   display: flex;
@@ -70,7 +73,7 @@ header {
 }
 main .intro {
   background-image: url(/assets/images/nurse.jpg);
-  background-position: right top;
+  background-position: 900px top;
   background-repeat: no-repeat;
   background-size: contain;
   height: 800px;
@@ -149,7 +152,7 @@ p.certs-intro {
 .schedule-intro table th:last-child button{
   width: 80%;
 }
-.labsLogos {
+.logos {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
@@ -157,7 +160,12 @@ p.certs-intro {
   height: 160px;
   justify-content: space-between;
 }
-.labsLogos img {
+
+.logos:hover {
+  filter: opacity(100%);
+}
+
+.logos img {
   width: 20%;
 }
 .vaccine {
@@ -174,6 +182,7 @@ p.certs-intro {
   font-weight: 700;
   margin: .5em 0;
 }
+
 .vaccineReasons p, .vaccineBenefits p, .preparations p, .emContact p {
   color: #6d7b93;
   font-family: 'League Spartan', sans-serif;
@@ -181,12 +190,14 @@ p.certs-intro {
   font-weight: 400;
   line-height: 1.5em;
 }
+
 .vaccineBenefits {
   align-items: flex-start;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
+
 .vaccineBenefits ul {
   border: solid 3px rgba(109, 123, 147, 0.2);
   border-radius: 10px;
@@ -216,7 +227,7 @@ p.certs-intro {
 }
 .preparations {
   background-image: url(/assets/images/nurse3.png);
-  background-position: left top;
+  background-position: 300px top;
   background-repeat: no-repeat;
   background-size: contain;
   height: 800px;
@@ -240,6 +251,7 @@ p.certs-intro {
 .preparationsList li h4 {
   flex-grow: 2;
 }
+
 .preparationsList li img {
   background-color: #dfeafc;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
@@ -260,17 +272,11 @@ p.certs-intro {
   padding: 1em 3em;
   transition: all ease-in-out .3s;
 }
-.preparationsList li:hover p {
-  display: block;
-  padding: 1em 3em;
-}
-.preparationsList li:hover button {
-  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
-  transform: rotate(180deg);
-}
+
+
 .emContact {
   background-image: url(/assets/images/nurse2.jpg);
-  background-position: right top;
+  background-position:1300px top;
   background-repeat: no-repeat;
   background-size: contain;
   height: 800px;
